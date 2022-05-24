@@ -1,11 +1,4 @@
 ///////////////////////////////////////////////////////////
-console.log("Hello world!")
-
-const myName = "Divyang Patel"
-const h1= document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
-
 ///////////////////////////////////////////////////////////
 // Button Navigation 
 
@@ -55,11 +48,9 @@ for (var i = 0; i < allButtons.length; i++) {
 
 var allMenus = document.querySelectorAll('h4[class*=dropdown-heading]');
 var allDropMenus = document.querySelectorAll('div[class*=dropmenu]');
-console.log(allDropMenus)
 for (var j = 0; j< allMenus.length; j++) {
   allMenus[j].addEventListener('click',function(){
     for(var k=0 ; k<allDropMenus.length ; k++){
-      console.log(k);
       if(this.parentElement!=allDropMenus[k]){
         allDropMenus[k].classList.remove("menu-open");
       }
@@ -84,7 +75,6 @@ for (var j = 0; j< allMenus.length; j++) {
 // Smooth Scrolling animation
 
 const allLinksEl = document.querySelectorAll('a:link');
-console.log(allLinksEl);
 
 allLinksEl.forEach(function(link){
   link.addEventListener('click',function(e){
@@ -124,8 +114,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
-
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();

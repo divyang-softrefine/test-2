@@ -510,11 +510,13 @@ a.link:link, a.link:visited {
 
 .dropdown-container {
   width: 400%;
+  min-width: 12rem;
   background-color: #f2ebe1;
   height: inherit;
   -webkit-box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.02);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .dropmenu > ul {
   padding-left: 1.5rem;
@@ -524,16 +526,18 @@ a.link:link, a.link:visited {
   display: block; }
 
 .dropdown-menu {
-  padding: 3rem 1rem 0 1rem;
-  height: inherit;
+  padding: 0 1rem;
+  height: fit-content;
   width: 3px;
-  transform: scaleY(0);
-  -webkit-transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
-  transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
-  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s; }
+  transform: scaleY(0) translateY(-50%) translateX(-100%);
+  -webkit-transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 0; }
 
 .dropdown-menu.btn__menu-toggled {
-  transform: scaleY(1);
+  transform: scaleY(1) translateY(-50%);
   width: 100%; }
 
 .dropmenu {
