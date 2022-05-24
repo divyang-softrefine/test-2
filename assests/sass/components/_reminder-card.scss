@@ -1,0 +1,35 @@
+.reminder-card{
+    border : 1px solid $color-bg;
+    border-radius: 1.6rem;
+    padding : 1.2rem 1.6rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    &>.selector{
+        grid-column: 1/-1;
+        justify-self: center;
+        display: flex;
+        flex-flow: row nowrap;
+        gap : 0.75rem;
+        &>*{
+            width : 0.5rem;
+            height : 0.5rem;
+            background-color: $color-card-1;
+            border-radius: 50%;
+            &:nth-child(2){
+                opacity: 0.75;
+            }
+            &:last-child{
+                opacity: 0.5;
+            }
+        }
+    }
+}
+.btn-reminder{
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    justify-self: end;
+    padding: 1.3rem;
+    border : 1px dashed $color-card-1;
+    border-radius: 3rem;
+}

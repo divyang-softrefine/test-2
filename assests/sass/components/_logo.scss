@@ -1,0 +1,75 @@
+        
+        // LOGO HTML CODE
+        // <div class="logo-container-outer">
+        //     <div class="logo-container">
+        //         <span class="logo-letter">Z</span>
+        //         <ion-icon class="logo-circle" name="ellipse-outline"></ion-icon>
+        //     </div>
+        // </div>
+
+
+
+.logo{
+    &-container{
+        position : relative;
+        height : $logo-size;
+        width : $logo-size;
+        &-outer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height : calc(#{$logo-size}*2.25);
+            width: 100%;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+    }
+    &-letter{
+        font-size: $logo-size;
+        position : absolute;
+        transform: rotate(50deg);
+        bottom : calc((#{-$logo-size}/2));
+    }
+    &-circle{
+        width : $logo-size;
+        height : $logo-size;
+        position : absolute;
+    }
+}
+
+.company-header{
+    height : calc(#{$logo-size}*2.25);
+    min-height: fit-content;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-left: 4px;
+    line-height: 1.1;
+    padding-top: 1rem;
+}
+
+.container__dashboard{
+    &>.logo-mobile{
+        width : 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        position: fixed;
+        border: none;
+        & *{
+            color : $color-btn-bg;
+        }
+        top : 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.logo-mobile-close{
+    width: 40px;
+    height : 40px;
+    &-container{
+        width: fit-content;
+        height: fit-content;
+    }
+    margin-right: 1rem;
+    color : $color-btn-bg;
+    display: none;
+}

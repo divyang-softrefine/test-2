@@ -1,0 +1,32 @@
+.header{
+    &__search{
+        &-bar{
+            border : 2px solid $grey-dark-3;
+            border-radius: 20rem;
+            height : 3rem;
+            width : 100%;
+            background-color: transparent;
+            padding-left: 2.5rem;
+        }
+        &-btn{
+            color : $grey-dark-3;
+            background-color: inherit;
+            border : none;
+            border-radius: 20rem;
+            &__icon {
+                height : 2rem;
+            }
+            position : absolute;
+            left : 1%;  
+            top : 15%;
+        }
+
+    }
+}
+.search{
+    position : relative;
+}
+
+.work-container-heading{
+    padding : 0 1rem;
+}

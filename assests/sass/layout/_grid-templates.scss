@@ -1,0 +1,47 @@
+
+.d-grid { display : grid; }
+.d-flex { display : flex; }
+
+// FLEX utilities
+
+.f-col { flex-direction: column;}
+.f-row { flex-direction: row;}
+.f-wrap { flex-wrap: wrap;}
+.f-nowrap {flex-wrap: nowrap;}
+
+
+
+//COLUMNS
+.g-c-1 { grid-template-columns: 1fr; }
+
+.g-c-2 { grid-template-columns: 1fr 1fr; }
+.g-c-1-2 { grid-template-columns: 1fr 2fr;}
+.g-c-2-1 { grid-template-columns: 2fr 1fr; }
+
+.g-c-3 { grid-template-columns: repeat(3,1fr); }
+
+.g-c-4 { grid-template-columns: repeat(4,1fr); }
+
+.g-c-5 { grid-template-columns: repeat(5,1fr); }
+
+.g-c-6 { grid-template-columns: repeat(6,1fr); }
+
+
+// GAPS
+
+.gap-0 { row-gap: $space-0; column-gap: $space-0; gap : $space-0; }
+.gap-1 { row-gap : $space-1; column-gap: $space-1; gap : $space-1; }
+.gap-2 { row-gap : $space-2; column-gap: $space-2; gap : $space-2; }
+.gap-3 { row-gap : $space-3; column-gap: $space-3; gap : $space-3; }
+.gap-4 { row-gap : $space-4; column-gap: $space-4; gap : $space-4; }
+.gap-5 { row-gap: $space-5; column-gap: $space-5; gap : $space-5; }
+
+
+// ALIGNMENT ITEMS  (  Horizontal and Vertical )
+//                      horizontals             verticals
+.g-center { justify-items: center; align-items: center; justify-content: center; }
+.align-center { align-items: center;}
+.justify-center {justify-content: center; justify-items: center;}
+
+.f-space-between {justify-content: space-between;}
+

@@ -1,0 +1,122 @@
+$card-img-size : 3.25rem;
+$card-text-color : black;
+
+.work-card{
+    width: 22rem;
+    height : 30rem;
+    background-color: $color-card-2;
+    padding : 3rem;
+    border-radius: 32px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap : 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.card{
+    &-top{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    &-img-box{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        
+        &>*{
+            width : $card-img-size;
+            height: $card-img-size;
+            border : solid 2px $color-card-2;
+            border-radius: 50%;
+            &:not(:last-child){
+                margin-left: calc(#{-$card-img-size}/2);
+            }
+        }
+
+        &>span{
+            font-size: calc(#{$card-img-size}/2.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-number{
+            
+            &-outline{
+                background-color: $color-card-2;
+                border-color : $card-text-color;
+            }
+
+            &-filled{
+                background-color: $card-text-color;
+                color : white;
+                border-color: $card-text-color;
+            }
+        }
+    }
+
+    &-menu-btn{
+        position : relative;
+        transform: translateY(calc(#{-$card-img-size}/4));
+        &,&::after{
+            content : "";
+        background-color: $card-text-color;
+        width: calc(#{$card-img-size}/7);
+        height: calc(#{$card-img-size}/7);
+        border-radius: 50%;
+        }
+        &::after{
+            position: absolute;
+            bottom : calc(#{-$card-img-size}/3);
+        }
+
+        &-container{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &-bottom{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        height: 100%;
+    }
+}
+
+.work{
+    &-heading{
+        font-size: 1.8rem;
+        letter-spacing: -0.5px;
+        line-height: 1.1;
+        margin-bottom: 4px;
+    }
+    &-subheading, &-time{
+        font-size: 1.2rem;
+        padding-left: 2px;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+    }
+    &-done-bar{        
+        background-color: rgba(200,200,200,0.5);        
+        margin-top: 0.8rem;
+        &,&-filled{
+            border-radius: 1rem;
+            height : 0.8rem;
+        }
+        &-filled{
+            background-color: $card-text-color;
+        }
+        .filled-1{
+            width: 40%;
+        }
+        .filled-2{
+            width: 75%;
+        }
+    }
+}
+
+.work-card-1{
+    background-color: $color-card-1;
+    & img{
+        border-color: $color-card-1;
+    }
+}
