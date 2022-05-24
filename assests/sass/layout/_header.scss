@@ -77,5 +77,8 @@
 
 .dropmenu {
     margin-bottom: 1rem;
+    &>ul>li:last-child{
+        font-weight: bold;
+    }
 }
 
