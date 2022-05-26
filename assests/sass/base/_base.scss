@@ -24,10 +24,9 @@ ul,ol {
 
 
 .container__dashboard {
-    height : fit-content;
-    width : fit-content;
+    //min-height : 100vh;
+    width : 100vw;
     background-color: white;
-    border-radius: $space-2;
     box-shadow: 0 0 3rem rgba(0,0,0,0.1);
     position: relative;
 }
@@ -37,13 +36,14 @@ ul,ol {
     &>*:not(:last-child){
         margin-bottom: 2rem;
     }
-    max-width : 50rem;
+    flex-grow : 12;
+    position : relative;
 }
 
 .container__user-menu{
     display: flex;
     flex-flow: column nowrap;
-    
+    gap : 4rem;
     padding : 1rem 2rem;
     max-width : 32rem;
     box-shadow: 0 0 3rem rgba(0,0,0,0.05);

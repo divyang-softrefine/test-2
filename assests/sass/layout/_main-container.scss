@@ -3,7 +3,7 @@
         &-bar{
             border : 2px solid $grey-dark-3;
             border-radius: 20rem;
-            height : 3rem;
+            min-height : 3rem;
             width : 100%;
             background-color: transparent;
             padding-left: 2.5rem;
@@ -13,12 +13,16 @@
             background-color: inherit;
             border : none;
             border-radius: 20rem;
+            height : 100%;
             &__icon {
-                height : 2rem;
+                min-height: 2rem;
+                height: 80%;
+                position : absolute;
+                left : 1%;  
+                top : 50%;
+                transform: translateY(-50%);
             }
-            position : absolute;
-            left : 1%;  
-            top : 15%;
+            
         }
 
     }
@@ -29,4 +33,13 @@
 
 .work-container-heading{
     padding : 0 1rem;
+}
+
+.page-reminder-container{
+    min-height: 12rem;
+    width: 100%;
+    height: fit-content;
+}
+.page-work-container{
+    flex-grow: 12;
 }

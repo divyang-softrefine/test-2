@@ -14,8 +14,8 @@
         <title>Ziferblat &mdash; Dashboard</title>
     </head>
     <body>
-        <div class="container__dashboard d-flex f-row f-nowrap gap-0 m-auto mt-5 mb-5">
-            <div class="logo-mobile logo-container-outer ">
+        <div class="container__dashboard d-flex f-row f-nowrap gap-0">
+            <div class="logo-mobile logo-container-outer">
                 <div class="logo-container">
                     <span class="logo-letter">Z</span>
                     <ion-icon class="logo-circle" name="ellipse-outline"></ion-icon>
@@ -23,6 +23,7 @@
             </div>
             <div class="container__header-nav d-flex f-nowrap">
                 <div class="nav-container d-flex f-nowrap f-col">
+                    <div>
                     <div class="d-flex g-center">
                         <div class="logo-container-outer">
                             <div class="logo-container">
@@ -31,13 +32,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex f-col g-center">
+                    <div class="justify-start d-flex f-col g-center">
                             <button class="btn__menu"><ion-icon name="home-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="people-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="calendar-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="checkbox-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="time-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="chatbubble-outline"></ion-icon></button>
+                    </div>
                     </div>
                     <div class="d-flex g-center">
                         <!-- help button -->
@@ -121,10 +123,11 @@
                             </ul>
                         </div>
                     </div>
+                    
                 </div>
             </div>
-            <div class="container__main">
-                <div class="page-title-container">
+            <div class="container__main d-flex f-col">
+                <div class="page-title-container justify-start">
                     <h2 class="heading-two page-title">Today, 4 October</h2>
                     <form action="#" class="search d-flex">
                         <button class="header__search-btn">
@@ -141,7 +144,7 @@
                             <h3 class="heading-three work-heading">Recent Projects</h3>
                             <a href="javascript:void(0)" class="link">View all</a>
                     </div>
-                    <div class="work-cards d-flex f-row f-nowrap f-space-between gap-1">
+                    <div class="work-cards d-flex f-row f-wrap gap-1 g-center">
                         <div class="work-card work-card-1">
                             <div class="card-top">
                                 <div class="card-img-box">
@@ -165,8 +168,107 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>                    
+                        <div class="work-card">
+                            <div class="card-top">
+                                <div class="card-img-box">                
+                                    <img src="./assests/img/user-1.jpg" alt="">
+                                    <img src="./assests/img/user-2.jpg" alt="">
+                                    <span class="card-img-box-number-outline">+2</span>
+                                </div>
+                                <div class="card-menu-btn-container">
+                                 <div class="card-menu-btn">
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="work-top">
+                                    <h4 class="work-heading">Make unique page for customer</h4>
+                                    <p class="work-subheading">Deadline : 30 October</p>
+                                </div>
+                                <div class="work-bottom">
+                                    <p class="work-time">108 hours / 75%</p>
+                                    <div class="work-done-bar">
+                                        <div class="work-done-bar-filled filled-2"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    
+                        <div class="work-card">
+                            <div class="card-top">
+                                <div class="card-img-box">                
+                                    <img src="./assests/img/user-1.jpg" alt="">
+                                    <img src="./assests/img/user-2.jpg" alt="">
+                                    <span class="card-img-box-number-outline">+2</span>
+                                </div>
+                                <div class="card-menu-btn-container">
+                                 <div class="card-menu-btn">
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="work-top">
+                                    <h4 class="work-heading">Make unique page for customer</h4>
+                                    <p class="work-subheading">Deadline : 30 October</p>
+                                </div>
+                                <div class="work-bottom">
+                                    <p class="work-time">108 hours / 75%</p>
+                                    <div class="work-done-bar">
+                                        <div class="work-done-bar-filled filled-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="card-top">
+                                <div class="card-img-box">                
+                                    <img src="./assests/img/user-1.jpg" alt="">
+                                    <img src="./assests/img/user-2.jpg" alt="">
+                                    <span class="card-img-box-number-outline">+2</span>
+                                </div>
+                                <div class="card-menu-btn-container">
+                                 <div class="card-menu-btn">
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="work-top">
+                                    <h4 class="work-heading">Make unique page for customer</h4>
+                                    <p class="work-subheading">Deadline : 30 October</p>
+                                </div>
+                                <div class="work-bottom">
+                                    <p class="work-time">108 hours / 75%</p>
+                                    <div class="work-done-bar">
+                                        <div class="work-done-bar-filled filled-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-card">
+                            <div class="card-top">
+                                <div class="card-img-box">                
+                                    <img src="./assests/img/user-1.jpg" alt="">
+                                    <img src="./assests/img/user-2.jpg" alt="">
+                                    <span class="card-img-box-number-outline">+2</span>
+                                </div>
+                                <div class="card-menu-btn-container">
+                                 <div class="card-menu-btn">
+                                 </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom">
+                                <div class="work-top">
+                                    <h4 class="work-heading">Make unique page for customer</h4>
+                                    <p class="work-subheading">Deadline : 30 October</p>
+                                </div>
+                                <div class="work-bottom">
+                                    <p class="work-time">108 hours / 75%</p>
+                                    <div class="work-done-bar">
+                                        <div class="work-done-bar-filled filled-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="work-card">
                             <div class="card-top">
                                 <div class="card-img-box">                

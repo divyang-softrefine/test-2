@@ -1,9 +1,10 @@
 .container__header-nav{ 
     width :  fit-content;
+    z-index: 3;
 }
 
 .nav-container {
-    height: 100%;
+    min-height: 100vh;
     width : 100%;
     gap : 3rem;
     padding-bottom: 1rem;
@@ -65,17 +66,16 @@
     padding : 0 1rem;
     height: fit-content;
     width : 3px;
-    transform: scaleY(0) translateY(-50%) translateX(-100%);
+    transform: scaleY(0) translateX(-100%);
     -webkit-transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,background-color 0.1s,-webkit-transform 0.2s;
     transition: transform 0.2s,width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,background-color 0.1s,-webkit-transform 0.2s;
     
     position : absolute;
-    top : 50%;
     left: 0;
 }
 
 .dropdown-menu.btn__menu-toggled{
-    transform: scaleY(1) translateY(-50%);
+    transform: scaleY(1);
     width : 100%;
 }
 

@@ -2,8 +2,9 @@ $card-img-size : 3.25rem;
 $card-text-color : black;
 
 .work-card{
+    max-width: 100%;
     width: 22rem;
-    height : 30rem;
+    min-height : 30rem;
     background-color: $color-card-2;
     padding : 3rem;
     border-radius: 32px;
@@ -78,6 +79,7 @@ $card-text-color : black;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
+        flex-grow: 1;
         height: 100%;
     }
 }
@@ -119,4 +121,11 @@ $card-text-color : black;
     & img{
         border-color: $color-card-1;
     }
+}
+
+.work-cards{
+    flex-grow: 12;
+    align-self: flex-start;
+    width: fit-content;
+
 }
