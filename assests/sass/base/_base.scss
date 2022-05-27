@@ -1,11 +1,11 @@
 html{
     font-size: 62.5%;
 
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 body{
-    background-color: $color-bg;
+    background-color: white;
     color: $color-text-light;
     font-weight: 300;
     line-height: 1.6;
@@ -27,9 +27,9 @@ ul,ol {
 
 .container__dashboard {
     //min-height : 100vh;
-    width : 100vw;
+    width : 99vw;
     background-color: white;
-    box-shadow: 0 0 3rem rgba(0,0,0,0.1);
+    margin : 0 auto;
     position: relative;
 }
 
