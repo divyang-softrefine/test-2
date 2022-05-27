@@ -3,7 +3,7 @@ html {
 
 body {
   background-color: #f3ece5;
-  color: #616161;
+  color: #4f4f4f;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -26,7 +26,7 @@ ul, ol {
 
 .container__main {
   padding: 2rem;
-  width: 50%;
+  width: inherit;
   grid-template-columns: 1fr;
   grid-template-rows: auto 60% auto;
   gap: 2rem;
@@ -200,9 +200,10 @@ body {
   line-height: 1.1;
   margin-bottom: 4px; }
 
-a.link:link, a.link:visited {
+.link:link, .link:visited {
   color: #f0884e;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-weight: 500; }
 
 .reminder-card .subheading {
   color: black;
@@ -515,6 +516,7 @@ a.link:link, a.link:visited {
 .container__header-nav {
   width: 25%;
   min-width: 20rem;
+  max-width: 25rem;
   z-index: 3; }
 
 .nav-container {
@@ -582,13 +584,16 @@ a.link:link, a.link:visited {
   transform: scaleY(1);
   width: 100%; }
 
+.dropdown-heading {
+  font-size: 1.6rem; }
+
 .dropmenu {
   margin-bottom: 1rem;
   font-weight: 500; }
   .dropmenu > ul > li {
     font-size: 1.4rem; }
-  .dropmenu > ul > li:last-child {
-    font-weight: 700;
+  .dropmenu > ul > li:last-child > a {
+    font-weight: 600;
     color: black;
     font-size: 110%; }
 

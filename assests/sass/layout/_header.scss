@@ -1,6 +1,7 @@
 .container__header-nav{ 
     width :  25%;
     min-width: 20rem;
+    max-width: 25rem;
     z-index: 3;
 }
 
@@ -82,14 +83,18 @@
     width : 100%;
 }
 
+.dropdown-heading{
+    font-size: 1.6rem;
+}
+
 .dropmenu {
     margin-bottom: 1rem;
     font-weight: 500;
     &>ul>li{
     font-size : 1.4rem;
     }
-    &>ul>li:last-child{
-        font-weight: 700;
+    &>ul>li:last-child>a{
+        font-weight: 600;
         color: black;
         font-size: 110%;
     }

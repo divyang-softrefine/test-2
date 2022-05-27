@@ -33,7 +33,7 @@ ul,ol {
 
 .container__main{
     padding : 2rem;
-    width: 50%;
+    width: inherit;
     &>*:not(:last-child){
         margin-bottom: 2rem;
     }

@@ -19,9 +19,10 @@ body{
     margin-bottom: 4px;
 }
 
-a.link:link,a.link:visited{
+.link:link,.link:visited{
     color : $color-btn-bg;
     font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .reminder-card .subheading{
