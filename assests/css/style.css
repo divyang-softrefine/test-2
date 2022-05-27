@@ -453,10 +453,12 @@ a.link:link, a.link:visited {
   .work-done-bar .filled-2 {
     width: 75%; }
 
-.work-card-1 {
+.work-card:nth-child(odd) {
   background-color: #fcbda3; }
-  .work-card-1 img {
-    border-color: #fcbda3; }
+  .work-card:nth-child(odd) .card-img-box-number-outline {
+    border-color: #fcbda3;
+    background-color: black;
+    color: white; }
 
 .work-cards {
   flex-grow: 12;

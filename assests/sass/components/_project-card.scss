@@ -116,10 +116,12 @@ $card-text-color : black;
     }
 }
 
-.work-card-1{
+.work-card:nth-child(odd){
     background-color: $color-card-1;
-    & img{
+    .card-img-box-number-outline{
         border-color: $color-card-1;
+        background-color: black;
+        color : white;
     }
 }
 
