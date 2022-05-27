@@ -578,6 +578,7 @@ a.link:link, a.link:visited {
   overflow: hidden; }
   .search-btn {
     width: 10%;
+    max-width: 3rem;
     height: auto; }
     .search-btn .header__search-btn__icon {
       height: 100%;
