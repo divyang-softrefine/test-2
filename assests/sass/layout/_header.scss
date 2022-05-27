@@ -51,7 +51,6 @@
     box-shadow: 10px 0 10px 0 rgba(0,0,0,0.02);
     position: relative;
     overflow: hidden;
-    font-size: 1.4rem;
 }
 
 //DROP DOWN MENU
@@ -64,6 +63,8 @@
 }
 
 .dropdown-menu{
+
+    font-size: 1.4rem;
     padding : 0 1rem;
     height: fit-content;
     width : 3px;
