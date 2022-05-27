@@ -2,7 +2,7 @@ $card-img-size : 3.25rem;
 $card-text-color : black;
 
 .work-card{
-    max-width: 40rem;
+    max-width: 30rem;
     min-width: 25rem;
     width: 45%;
     min-height : 35rem;
@@ -22,6 +22,7 @@ $card-text-color : black;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        margin-bottom: 2rem;
     }
     &-img-box{
         display: flex;
@@ -90,7 +91,7 @@ $card-text-color : black;
 
 .work{
     &-heading{
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         letter-spacing: -0.5px;
         line-height: 1.1;
     }

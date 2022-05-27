@@ -41,9 +41,15 @@
     min-height: fit-content;
     justify-content: center;
     border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding-left: 4px;
+    padding-left: 2rem;
+    padding-bottom: .5rem;
     line-height: 1.1;
     padding-top: 1rem;
+    font-weight: 900;
+    .purpose{
+        color : #333;
+        font-weight: 400;
+    }
 }
 
 .container__dashboard{
