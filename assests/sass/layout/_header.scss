@@ -1,5 +1,6 @@
 .container__header-nav{ 
-    width :  fit-content;
+    width :  25%;
+    min-width: 20rem;
     z-index: 3;
 }
 
@@ -83,8 +84,14 @@
 
 .dropmenu {
     margin-bottom: 1rem;
+    font-weight: 500;
+    &>ul>li{
+    font-size : 1.4rem;
+    }
     &>ul>li:last-child{
-        font-weight: bold;
+        font-weight: 700;
+        color: black;
+        font-size: 110%;
     }
 }
 
