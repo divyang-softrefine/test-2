@@ -327,10 +327,8 @@ body {
       height: 8rem; }
       .container__header-nav .btn__menu > * {
         transform: scale(2); }
-    .container__header-nav .nav-container > *:first-child {
-      height: 90vh; }
-      .container__header-nav .nav-container > *:first-child > *:nth-child(2) {
-        height: inherit; }
+    .container__header-nav .nav-container > *:first-child > *:nth-child(2) {
+      height: inherit; }
     .container__header-nav .btn__help {
       transform: translateY(-2rem) scale(2); }
     .container__header-nav .dropmenu > * * {
@@ -398,29 +396,29 @@ body {
 
 .logo-container {
   position: relative;
-  height: 2rem;
-  width: 2rem; }
+  height: 3rem;
+  width: 3rem; }
   .logo-container-outer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(2rem*2.25);
+    height: calc(3rem*2.25);
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .logo-letter {
-  font-size: 2rem;
+  font-size: 3rem;
   position: absolute;
   transform: rotate(50deg);
-  bottom: calc((-2rem/2)); }
+  bottom: calc((-3rem/2)); }
 
 .logo-circle {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   position: absolute; }
 
 .company-header {
-  height: calc(2rem*2.25);
+  height: calc(3rem*2.25);
   min-height: fit-content;
   justify-content: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -472,7 +470,7 @@ body {
   z-index: 9999999 !important;
   display: flex !important;
   position: absolute;
-  top: 2rem;
+  top: 3.25rem;
   right: 0;
   background: transparent; }
   #left-toggle:checked ~ label .logo-mobile > *:first-child {
@@ -679,6 +677,7 @@ body {
 .dropdown-menu {
   font-size: 1.4rem;
   padding: 0 1rem;
+  padding-left: 2rem;
   height: fit-content;
   width: 3px;
   transform: scaleY(0) translateX(-100%);
