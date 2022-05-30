@@ -470,7 +470,7 @@ body {
   z-index: 9999999 !important;
   display: flex !important;
   position: absolute;
-  top: 2rem;
+  top: 3rem;
   right: 0;
   background: transparent; }
   #left-toggle:checked ~ label .logo-mobile > *:first-child {
