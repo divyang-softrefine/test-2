@@ -53,13 +53,13 @@
 }
 
 .container__dashboard{
-    &>.logo-mobile{
+    &>label>.logo-mobile{
         width : 12vw;
         height: 12vw;
         border-radius: 50%;
         background-color: white;    
         box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        position: fixed;
+        position: absolute;
         border: none;
         z-index: 2;
         & *{
@@ -67,17 +67,47 @@
         }
         top : 50%;
         transform: translateY(-50%);
+        transition: all .5s;
+        transition-delay: .2s;
     }
 }
 
 .logo-mobile-close{
+    height: 90%;
     width: 100%;
-    height : 100%;
-    &-container{
-        width: 20%;
-        height: 100%;
-    }
-    margin-right: 1rem;
     color : $color-btn-bg;
-    display: none;
+    display: none !important;
 }
+
+
+.visually-hidden{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(2) translateX(1rem);
+    z-index: 2;
+    visibility: hidden;
+}
+
+#left-toggle:checked ~.container__header-nav{
+    transform: translateX(0);
+}
+
+#left-toggle:checked ~label{
+    .logo-mobile{
+        background-color: $color-bg-light;
+        box-shadow: none;
+        z-index : 9999999 !important;
+        display: flex !important;
+        position: absolute;
+        top: 2rem;
+        right : 0;
+        &>*:first-child{
+            display: none !important;
+        }
+        &>*:last-child{
+            display: flex !important;
+        }
+    }
+}
+

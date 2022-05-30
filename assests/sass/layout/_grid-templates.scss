@@ -51,7 +51,22 @@
 
 
 
-
 .overflow-auto{
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x : hidden;
+}
+
+.overflow-hover{
+    overflow-y : auto;
+    visibility: hidden;
+    &>*{
+        visibility: visible;
+    }
+    &:hover{
+        visibility: visible;
+    }
+}
+
+.o-hidden{
+    overflow: hidden;
 }

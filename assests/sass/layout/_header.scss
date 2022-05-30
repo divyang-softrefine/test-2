@@ -19,6 +19,7 @@
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
     justify-content: space-between;
+    color : $color-text-light;
 }
 
 .btn__menu{
@@ -65,7 +66,11 @@
 .dropmenu.menu-open>ul{
     display: block;
 }
-
+.menu-open{
+    &>h4 ion-icon{
+        transform: rotate(90deg);
+    }
+}
 .dropdown-menu{
 
     font-size: 1.4rem;
@@ -101,5 +106,13 @@
         color: black;
         font-size: 110%;
     }
+
+    
 }
 
+
+
+
+.active{
+    color : #000;
+}
