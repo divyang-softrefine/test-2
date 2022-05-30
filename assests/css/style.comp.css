@@ -473,7 +473,8 @@ body {
   display: flex !important;
   position: absolute;
   top: 2rem;
-  right: 0; }
+  right: 0;
+  background: transparent; }
   #left-toggle:checked ~ label .logo-mobile > *:first-child {
     display: none !important; }
   #left-toggle:checked ~ label .logo-mobile > *:last-child {
