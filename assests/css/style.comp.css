@@ -217,9 +217,6 @@ h1, h2, h3, h4, h5, h6, .heading-text {
 body {
   font-family: "Nunito", sans-serif; }
 
-.page-title-container .heading-two {
-  font-size: 2rem; }
-
 .link:link, .link:visited {
   color: #F0884E;
   font-size: 1.4rem;
@@ -323,6 +320,8 @@ p {
       grid-row: 2; }
     .work-progress-counter-container > *:nth-child(3) {
       grid-row: 3; }
+  .user-details > * {
+    grid-column: 1/-1; }
   .user-menu-header {
     flex-flow: column wrap !important;
     align-items: center; }
@@ -704,19 +703,21 @@ p {
     display: none; }
 
 .dropmenu > ul {
-  padding-left: 1.5rem;
   display: none; }
 
 .dropmenu.menu-open > ul {
   display: block; }
 
-.menu-open > h4 ion-icon {
-  transform: rotate(90deg); }
+.menu-open {
+  background-color: white; }
+  .menu-open > h4 ion-icon {
+    transform: rotate(90deg); }
+  .menu-open > h4 > *:first-child {
+    font-weight: 900;
+    font-size: 2.4rem !important; }
 
 .dropdown-menu {
   font-size: 1.4rem;
-  padding: 0 1rem;
-  padding-left: 2rem;
   height: fit-content;
   width: 3px;
   transform: scaleY(0) translateX(-100%);
@@ -734,6 +735,7 @@ p {
   font-size: 1.6rem; }
 
 .dropmenu {
+  padding: 1rem 24px;
   margin-bottom: 1rem;
   font-weight: 500; }
   .dropmenu > ul > li {
