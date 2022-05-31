@@ -26,7 +26,6 @@
                     <ion-icon name="close-outline" class="logo-mobile-close"></ion-icon>
                 </div>
             </label>
-            
             <div class="container__header-nav d-flex f-nowrap o-hidden">
                 <div class="nav-container d-flex f-nowrap f-col overflow-auto">
                     <div>
@@ -120,14 +119,13 @@
                                 <li class="dropmenu-item"><a href="javascript:void(0)">Add new project</a></li>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <div class="container__main d-grid">
                 <div class="page-title-container justify-start">
                     <div class="d-flex f-row f-nowrap f-space-between">
                     <h2 class="heading-two page-title">Today, 4 October</h2>
-                    <div class="user-nav d-flex f-row f-nowrap gap-2">
+                    <div class="desktop-switch user-nav d-flex f-row f-nowrap gap-2 ">
                         <button class="btn btn-notification">
                             <ion-icon name="notifications-outline"></ion-icon>
                         </button>
@@ -156,7 +154,8 @@
                     <div class="page-work-container">
                         <div class="work-container-heading d-flex f-space-between">
                                 <h3 class="heading-three">Recent Projects</h3>
-                                <button class="btn btn-user-project">Add project</button>
+                                <button class="btn btn-user-project desktop-switch">Add project</button>
+                                <h5 class="mobile-switch"><a href="javascript:void(0)" class="link">View All</a></h5>
                         </div>
                         <div class="overflow-hover main-area">
                             <div class="work-cards d-flex f-row f-wrap gap-3 g-center">
@@ -687,7 +686,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="user-details d-grid g-c-2">
+                        <div class="user-details d-grid g-c-2 desktop-switch">
                             <div class="team-members-container mt-1">
                                 <h3 class="heading-three">Team members</h3>
                                 <div class="members-img-box">
@@ -719,7 +718,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="daily-tasks-container mt-2 mb-1">
+                        <div class="daily-tasks-container mt-2 mb-1 desktop-switch">
                             <div class="d-flex f-row f-nowrap f-space-between mb-1">
                                 <h3 class="heading-three">Daily tasks (3)</h3>
                                 <a href="javascript:void(0)" class="link">Edit</a>
@@ -762,6 +761,106 @@
                     </div>
                 </div>
             </div>
+            <div class="container__user-menu mobile-switch">
+                <div class="overflow-auto">
+                    <div class="d-flex f-row f-nowrap f-space-between g-center">
+                        <div class="mobile-user-button-close-container d-flex">
+                            <ion-icon name="close-outline" class="mobile-user-button-close"></ion-icon>
+                        </div>
+                        <button class="user-button-toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                        </div>
+                        <div class="user-menu-header d-flex f-row f-space-between gap-1 p-1">
+                            <button class="btn btn-user-project">Add project</button>
+                            <div class="user-nav d-flex f-row f-nowrap gap-1">
+                                <button class="btn btn-notification">
+                                    <ion-icon name="notifications-outline"></ion-icon>
+                                </button>
+                                <div class="user d-flex f-row f-nowrap">
+                                    <img src="./assests/img/user-1.jpg" alt="user-img" class="user-img">
+                                    <div class="text">
+                                        <p class="subheading">User</p>
+                                        <h4 class="heading-four">Jason</h4>
+                                    </div>
+                                    <button class="user-nav-button">
+                                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-members-container mt-1">
+                            <h3 class="heading-three">Team members</h3>
+                            <div class="members-img-box">
+                                <img src="./assests/img/user-1.jpg" alt="team members">
+                                <img src="./assests/img/user-2.jpg" alt="team members">
+                                <img src="./assests/img/user-3.jpg" alt="team members">
+                                <img src="./assests/img/user-4.jpg" alt="team members">
+                                <img src="./assests/img/user-5.jpg" alt="team members">
+                                <button class="add-member">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="work-progress-counter-container">
+                                <div class="project-progress-container">
+                                    <p class="subheading">Project time</p>
+                                    <h3 class="heading-three project-time-counter">18 hours</h3>
+                                </div>
+                                <div class="task-progress-container">
+                                    <p class="subheading">Tasks in progress</p>
+                                    <h3 class="heading-three task-counter">2</h3>
+                                </div>
+                                <div class="finished-tasks-container">
+                                    <p class="subheading">Finished tasks</p>
+                                    <h3 class="heading-three finished-counter">16</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="daily-tasks-container mt-2 mb-1">
+                            <div class="d-flex f-row f-nowrap f-space-between mb-1">
+                                <h3 class="heading-three">Daily tasks (3)</h3>
+                                <a href="javascript:void(0)" class="link">Edit</a>
+                            </div>
+                            <div class="daily-cards d-grid g-c-2">
+                                <div class="daily-card daily-card-1">
+                                    <p class="text">Add new</p>
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </div>
+                                <div class="daily-card daily-card-2">
+                                    <div class="marker">
+                                        <div class="circle red"></div><span>New</span>
+                                        <button class="checkbox">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Change color pallete to more bright</p>
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="daily-card daily-card-3">
+                                    <div class="marker">
+                                        <div class="circle green"></div><span>In progress</span>
+                                        <button class="checkbox">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Make prototype for mobile version</p>
+                                </div>
+                                <div class="daily-card daily-card-4">
+                                    <div class="marker">
+                                        <div class="circle white"></div><span>Done</span>
+                                        <button class="checkbox checked">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Make fixes in homepage</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>  
         </div>
         <script defer src="./assests/js/script.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

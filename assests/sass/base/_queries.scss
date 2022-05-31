@@ -104,6 +104,12 @@
         }
     }
     
+    .desktop-switch{
+        display: inherit !important;
+    }
+    .mobile-switch{
+        display: none !important;
+    }
 }
 
 @media (max-width : 31.25em){
