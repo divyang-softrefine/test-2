@@ -745,6 +745,11 @@ p {
     color: black;
     font-size: 110%; }
 
+.btn__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .active {
   color: #000; }
 
