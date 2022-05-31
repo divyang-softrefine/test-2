@@ -6,10 +6,13 @@
 }
 
 .nav-container {
-    min-height: 100vh;
+    height: 100vh;
     width : 100%;
     gap : 3rem;
     padding-bottom: 1rem;
+    &::-webkit-scrollbar{
+        display: none;
+    }
     ion-icon:not(.logo-circle){
         width : 2rem;
         height : 2rem;
@@ -51,11 +54,13 @@
     width: 400%;
     min-width: 12rem;
     background-color: $color-bg-light;
-    height : inherit;
+    height : 100vh;
     -webkit-box-shadow: 10px 0 10px 0 rgba(0,0,0,0.1);
     box-shadow: 10px 0 10px 0 rgba(0,0,0,0.02);
     position: relative;
-    overflow: hidden;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 //DROP DOWN MENU
