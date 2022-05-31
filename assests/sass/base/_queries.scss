@@ -85,6 +85,12 @@
 
     }
 
+    .user-details{
+        &>*{
+            grid-column: 1/-1;
+        }
+    }
+
     .user-menu-header{
         flex-flow : column wrap !important;
         align-items: center;
