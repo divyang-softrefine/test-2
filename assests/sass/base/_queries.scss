@@ -6,6 +6,8 @@
     display : none !important;
 }
 
+// FOR SMALLER SCREENS
+
 
 @media (max-width : 60em){
     html{
@@ -139,8 +141,20 @@
         }
     }
     .container__main{
-        width: 90vw;
+        width: 100vw;
         margin: 0 auto;
+        &>*{
+            padding: 5rem;
+            &:first-child{
+                padding: 1rem 2rem;
+            }
+            &:last-child>*{
+                width: 100%;
+                &:last-child>*{
+                    width: 100%;
+                }
+            }
+        }
     }
     .logo-mobile    {
         display : flex !important;
@@ -227,4 +241,15 @@
             backdrop-filter: blur(5px);
         }
     }
+}
+
+
+
+// FOR LARGER SCREENS
+
+@media (min-width : 90em){
+    html{
+        font-size: 100%;
+    }
+    
 }

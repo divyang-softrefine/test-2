@@ -12,12 +12,7 @@ body{
     }
 }
 
-.heading-three{
-    font-size: 1.8rem;
-    letter-spacing: -0.5px;
-    line-height: 1.1;
-    margin-bottom: 4px;
-}
+
 
 .link:link,.link:visited{
     color : $color-btn-bg;
@@ -36,5 +31,36 @@ body{
 }
 
 .subheading{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+}
+
+.heading-one{
+    font-size: 3.2rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+.heading-two{
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+.heading-three{
+    font-size: 2.4rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+h4,.heading-four{
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+h5,.heading-five{
+    font-size: 1.6rem;
+}
+p{
+    font-size: 1.6rem;
 }

@@ -61,18 +61,19 @@ ul,ol {
 }
 
 .container__main{
-    padding : 2rem;
-    height: 100%;
+    height: 100vh;
     width: inherit;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
     gap : 2rem;
+    overflow: hidden;
     &>*:last-child{
-        align-self: flex-end;
-        
+        align-self: flex-start;
+        height: 100%;
     }
     &>*{
         width: 100%;
+        padding: 2rem;
     }
 }
 
