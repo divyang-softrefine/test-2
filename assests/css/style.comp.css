@@ -49,7 +49,6 @@ ul, ol {
 
 .container__main {
   height: 100vh;
-  width: inherit;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   gap: 2rem;
@@ -62,17 +61,31 @@ ul, ol {
     padding: 2rem; }
 
 .container__user-menu {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 1rem 2rem;
+  overflow: hidden;
   width: 30%;
-  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.05);
-  display: none; }
+  min-width: 30rem;
+  max-width: 50rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.05); }
+  .container__user-menu .work-progress-counter-container {
+    margin-top: 2rem; }
+  .container__user-menu > * {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem 2rem;
+    height: 100%; }
+    .container__user-menu > *::-webkit-scrollbar {
+      display: none; }
 
 button {
   border: none;
   background-color: inherit;
   cursor: pointer; }
+
+.desktop-switch {
+  display: none !important; }
+
+.mobile-switch {
+  display: inherit !important; }
 
 .m-auto {
   margin-left: auto;
@@ -329,7 +342,11 @@ p {
     gap: 4px; }
     .reminder-card > * {
       grid-column: 1/-1;
-      justify-self: center !important; } }
+      justify-self: center !important; }
+  .desktop-switch {
+    display: inherit !important; }
+  .mobile-switch {
+    display: none !important; } }
 
 @media (max-width: 31.25em) {
   html {
@@ -887,16 +904,18 @@ p {
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.5rem; }
+  margin-bottom: 2rem;
+  gap: 1%; }
   .members-img-box > * {
-    width: 5rem;
+    width: 15.84%;
+    max-width: 5rem;
     height: 100%;
     border-radius: 50%; }
     .members-img-box > *:last-child {
       border: 1px #F0884E dashed;
       background-color: #F2EBE1;
-      width: 2rem;
-      height: 2rem;
+      width: 3rem;
+      height: 3rem;
       color: #F0884E;
       display: flex;
       align-items: center;
@@ -935,7 +954,7 @@ p {
 
 .daily-card {
   width: 100%;
-  min-height: 12rem;
+  min-height: 15rem;
   color: black;
   font-weight: 700;
   border-radius: 1.2rem;
@@ -943,31 +962,25 @@ p {
   padding: 1rem;
   display: flex;
   flex-flow: column nowrap;
-  position: relative; }
+  position: relative;
+  background-position: center;
+  background-size: cover; }
   .daily-card ion-icon {
     width: 2rem;
     height: 2rem; }
   .daily-card-1 {
     background-color: #f3ece5; }
     .daily-card-1 .text {
-      margin-top: 12.5%; }
+      order: 9; }
     .daily-card-1 > *:last-child {
-      position: absolute;
-      right: 1rem;
-      bottom: 1rem; }
+      align-self: flex-end; }
   .daily-card-2 {
-    background-image: url(../img/bg/3.png);
-    background-position: bottom;
-    background-size: 105%; }
+    background-image: url(../img/bg/3.png); }
   .daily-card-3 {
-    background-image: url(../img/bg/1.png);
-    background-position: bottom;
-    background-size: 100%; }
+    background-image: url(../img/bg/1.png); }
   .daily-card-4 {
     background-color: #f0884e;
     background-image: url(../img/bg/2.png);
-    background-position: bottom;
-    background-size: 100%;
     color: white; }
 
 .marker {
