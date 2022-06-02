@@ -111,7 +111,8 @@
         width: 2rem;
         height: 2rem;
     }
-
+    background-position: center;
+    background-size: cover;
     &-1{
         background-color: $color-bg;
         .text{
@@ -123,19 +124,13 @@
     }
     &-2{
         background-image: url(../img/bg/3.png);
-        background-position: bottom;
-        background-size: 105%;
     }
     &-3{
         background-image: url(../img/bg/1.png);
-        background-position: bottom;
-        background-size: 100%;
     }
     &-4{
         background-color: rgba($color-btn-bg,1);
         background-image: url(../img/bg/2.png);
-        background-position: bottom;
-        background-size: 100%;
         color : white;
     }
 }

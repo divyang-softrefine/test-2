@@ -962,7 +962,9 @@ p {
   padding: 1rem;
   display: flex;
   flex-flow: column nowrap;
-  position: relative; }
+  position: relative;
+  background-position: center;
+  background-size: cover; }
   .daily-card ion-icon {
     width: 2rem;
     height: 2rem; }
@@ -973,18 +975,12 @@ p {
     .daily-card-1 > *:last-child {
       align-self: flex-end; }
   .daily-card-2 {
-    background-image: url(../img/bg/3.png);
-    background-position: bottom;
-    background-size: 105%; }
+    background-image: url(../img/bg/3.png); }
   .daily-card-3 {
-    background-image: url(../img/bg/1.png);
-    background-position: bottom;
-    background-size: 100%; }
+    background-image: url(../img/bg/1.png); }
   .daily-card-4 {
     background-color: #f0884e;
     background-image: url(../img/bg/2.png);
-    background-position: bottom;
-    background-size: 100%;
     color: white; }
 
 .marker {
