@@ -6,19 +6,57 @@ h1,h2,h3,h4,h5,h6,.heading-text {font-family: $font-display; color : #222;}
 body{
     font-family: $font-primary;
 }
-.page-title-container{
-    .heading-two{
-        font-size: 2rem;
-    }
+
+
+
+
+.link:link,.link:visited{
+    color : $color-btn-bg;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
+.reminder-card .subheading{
+    color: black;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.text,p,span,a{
+    font-weight: 500;
+}
+
+.subheading{
+    font-size: 1.6rem;
+}
+
+.heading-one{
+    font-size: 3.2rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+.heading-two{
+    font-size: 2.8rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
 .heading-three{
+    font-size: 2.4rem;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+h4,.heading-four{
     font-size: 1.8rem;
     letter-spacing: -0.5px;
     line-height: 1.1;
     margin-bottom: 4px;
 }
-
-a.link:link,a.link:visited{
-    color : $color-btn-bg;
+h5,.heading-five{
+    font-size: 1.6rem;
+}
+p{
+    font-size: 1.6rem;
 }

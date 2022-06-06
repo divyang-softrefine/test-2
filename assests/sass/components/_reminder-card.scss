@@ -3,7 +3,7 @@
     border-radius: 1.6rem;
     padding : 1.2rem 1.6rem;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 60% 40%;    
     &>.selector{
         grid-column: 1/-1;
         justify-self: center;

@@ -2,26 +2,6 @@
 ///////////////////////////////////////////////////////////
 // Button Navigation 
 
-const btnNavEl = document.querySelector(".logo-mobile");
-const headerEl = document.querySelector(".container__header-nav");
-btnNavEl.addEventListener('click',function(){
-  headerEl.classList.add("left-open")
-})
-
-const btnNavEl1 = document.querySelector(".logo-mobile-close");
-btnNavEl1.addEventListener('click',function(){
-  headerEl.classList.remove("left-open")
-})
-
-const btnNavEl2 = document.querySelector(".mobile-user-button");
-const headerEl2 = document.querySelector(".container__user-menu");
-btnNavEl2.addEventListener('click',function(){
-  headerEl2.classList.add("right-open")
-})
-const btnNavEl3 = document.querySelector(".mobile-user-button-close");
-btnNavEl3.addEventListener('click',function(){
-  headerEl2.classList.remove("right-open")
-})
 
 var allButtons = document.querySelectorAll('button[class^=btn__menu]');
 const headerEl4 = document.querySelector(".dropdown-menu");

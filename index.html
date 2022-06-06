@@ -14,15 +14,21 @@
         <title>Ziferblat &mdash; Dashboard</title>
     </head>
     <body>
-        <div class="container__dashboard d-flex f-row f-nowrap gap-0 m-auto mt-5 mb-5">
-            <div class="logo-mobile logo-container-outer ">
-                <div class="logo-container">
-                    <span class="logo-letter">Z</span>
-                    <ion-icon class="logo-circle" name="ellipse-outline"></ion-icon>
+        
+        <div class="container__dashboard d-flex f-row f-nowrap gap-0">
+            <input type="checkbox" id="left-toggle" class="visually-hidden">
+            <label for="left-toggle">
+                <div class="logo-mobile logo-container-outer">
+                    <div class="logo-container">
+                        <span class="logo-letter">Z</span>
+                        <ion-icon class="logo-circle" name="ellipse-outline"></ion-icon>
+                    </div>
+                    <ion-icon name="close-outline" class="logo-mobile-close"></ion-icon>
                 </div>
-            </div>
-            <div class="container__header-nav d-flex f-nowrap">
-                <div class="nav-container d-flex f-nowrap f-col">
+            </label>
+            <div class="container__header-nav d-flex f-nowrap o-hidden">
+                <div class="nav-container d-flex f-nowrap f-col overflow-auto">
+                    <div>
                     <div class="d-flex g-center">
                         <div class="logo-container-outer">
                             <div class="logo-container">
@@ -31,7 +37,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex f-col g-center">
+                    <div class="justify-start d-flex f-col g-center">
                             <button class="btn__menu"><ion-icon name="home-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="people-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="calendar-outline"></ion-icon></button>
@@ -39,281 +45,822 @@
                             <button class="btn__menu"><ion-icon name="time-outline"></ion-icon></button>
                             <button class="btn__menu"><ion-icon name="chatbubble-outline"></ion-icon></button>
                     </div>
+                    </div>
                     <div class="d-flex g-center">
                         <!-- help button -->
                         <button class="btn btn__help">?</button>
                     </div>
                 </div>
-                <div class="dropdown-container">
+                <div class="dropdown-container overflow-auto">
                     <div class="company-header d-flex f-row f-nowrap f-space-between">
                         <div class="d-flex f-col justify-center">
                         <h2 class="heading-two">Ziferblat</h2>
                         <p class="purpose">Teamwork & time management</p>
-                        </div>
-                        <div class="logo-mobile-close-container d-flex">
-                            <ion-icon name="close-outline" class="logo-mobile-close"></ion-icon>
-                        </div>                 
+                        </div>                        
                     </div>
                     <div class="dropdown-menu d-flex f-col gap-1 btn__menu-toggled">
                         <div class="dropmenu">
                             <h4 class="heading-four dropdown-heading d-flex f-space-between">
-                                <span>Team</span><span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                <span>Team</span><span><ion-icon name="chevron-forward-outline"></ion-icon></span>
                             </h4>
                             <ul>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                            </ul>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">All projects(4)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Design system</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Make unique design for customer</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">User Flow</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">UX research</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Add new project</a></li>
                         </div>
                         <div class="dropmenu">
                             <h4 class="heading-four dropdown-heading d-flex f-space-between">
-                                <span>Projects</span><span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                <span>Projects</span><span><ion-icon name="chevron-forward-outline"></ion-icon></span>
                             </h4>
                             <ul>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                            </ul>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">All projects(4)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Design system</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Make unique design for customer</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">User Flow</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">UX research</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Add new project</a></li>
                         </div>
                         <div class="dropmenu">
                             <h4 class="heading-four dropdown-heading d-flex f-space-between">
-                                <span>Tasks</span><span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                <span>Tasks</span><span><ion-icon name="chevron-forward-outline"></ion-icon></span>
                             </h4>
                             <ul>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                            </ul>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">All tasks(4)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">New(1)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">In progress(1)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Done(1)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Add new task</a></li>
                         </div>
                         <div class="dropmenu">
                             <h4 class="heading-four dropdown-heading d-flex f-space-between">
-                                <span>Reminders</span><span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                <span>Reminders</span><span><ion-icon name="chevron-forward-outline"></ion-icon></span>
                             </h4>
                             <ul>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                            </ul>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">All projects(4)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Design system</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Make unique design for customer</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">User Flow</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">UX research</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Add new project</a></li>
                         </div>
                         <div class="dropmenu">
                             <h4 class="heading-four dropdown-heading d-flex f-space-between">
-                                <span>Messengers</span><span><ion-icon name="chevron-down-outline"></ion-icon></span>
+                                <span>Messengers</span><span><ion-icon name="chevron-forward-outline"></ion-icon></span>
                             </h4>
                             <ul>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                                <li class="dropmenu-item"><a href="javascript:void(0)">lorem</a></li>
-                            </ul>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">All projects(4)</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Design system</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Make unique design for customer</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">User Flow</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">UX research</a></li>
+                                <li class="dropmenu-item"><a href="javascript:void(0)">Add new project</a></li>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container__main">
-                <div class="page-title-container">
+            <div class="container__main d-grid">
+                <div class="page-title-container justify-start">
+                    <div class="d-flex f-row f-nowrap f-space-between">
                     <h2 class="heading-two page-title">Today, 4 October</h2>
-                    <form action="#" class="search d-flex">
-                        <button class="header__search-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 header__search-btn__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </button>
-                        <input type="text" class="header__search-bar" placeholder="Search hotels">
-                        
-                    </form>
-                </div>
-                <div class="page-work-container">
-                    <div class="work-container-heading d-flex f-space-between">
-                            <h3 class="heading-three work-heading">Recent Projects</h3>
-                            <a href="javascript:void(0)" class="link">View all</a>
-                    </div>
-                    <div class="work-cards d-flex f-row f-nowrap f-space-between gap-1">
-                        <div class="work-card work-card-1">
-                            <div class="card-top">
-                                <div class="card-img-box">
-                                    <img src="./assests/img/user-2.jpg" alt="">                
-                                    <img src="./assests/img/user-1.jpg" alt="">
-                                    <span class="card-img-box-number-filled">+3</span>
-                                </div>
-                                <div class="card-menu-btn-container">
-                                    <div class="card-menu-btn"></div>
-                                </div>
-                            </div>
-                            <div class="card-bottom">
-                                <div class="work-top">
-                                    <h4 class="work-heading">Design system</h4>
-                                    <p class="work-subheading">Deadline : 18 October</p>
-                                </div>
-                                <div class="work-bottom">
-                                    <p class="work-time">84 hours / 40%</p>
-                                    <div class="work-done-bar">
-                                        <div class="work-done-bar-filled filled-1"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="work-card">
-                            <div class="card-top">
-                                <div class="card-img-box">                
-                                    <img src="./assests/img/user-1.jpg" alt="">
-                                    <img src="./assests/img/user-2.jpg" alt="">
-                                    <span class="card-img-box-number-outline">+2</span>
-                                </div>
-                                <div class="card-menu-btn-container">
-                                 <div class="card-menu-btn">
-                                 </div>
-                                </div>
-                            </div>
-                            <div class="card-bottom">
-                                <div class="work-top">
-                                    <h4 class="work-heading">Make unique page for customer</h4>
-                                    <p class="work-subheading">Deadline : 30 October</p>
-                                </div>
-                                <div class="work-bottom">
-                                    <p class="work-time">108 hours / 75%</p>
-                                    <div class="work-done-bar">
-                                        <div class="work-done-bar-filled filled-2"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="page-reminder-container">
-                    <h3 class="heading-three">Reminders</h3>
-                    <div class="reminder-card">
-                        <div class="text">
-                            <p class="subheading">Tomorrow, 16:00-18:00</p>
-                            <h3 class="heading-three">Discussion of the interim results of the project</h3>
-                        </div>
-                        <button class="btn-reminder">Set reminder</button>
-                        <div class="selector">
-                            <!-- Circles through css -->
-                            <button></button>
-                            <button></button>
-                            <button></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="mobile-user-button user-button-toggle">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            <div class="container__user-menu">
-                <div class="d-flex f-row f-nowrap f-space-between g-center">
-                <div class="mobile-user-button-close-container d-flex">
-                    <ion-icon name="close-outline" class="mobile-user-button-close"></ion-icon>
-                </div>
-                <button class="user-button-toggle">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </button>
-                </div>
-                <div class="user-menu-header d-flex f-row f-space-between gap-1 p-1">
-                    <button class="btn btn-user-project">Add project</button>
-                    <div class="user-nav d-flex f-row f-nowrap gap-1">
+                    <div class="desktop-switch user-nav d-flex f-row f-nowrap gap-2 ">
                         <button class="btn btn-notification">
                             <ion-icon name="notifications-outline"></ion-icon>
                         </button>
-                        <div class="user d-flex f-row f-nowrap">
-                            <img src="./assests/img/user-1.jpg" alt="user-img" class="user-img">
-                            <div class="text">
-                                <p class="subheading">User</p>
-                                <h4 class="heading-four">Jason</h4>
+                        <div class="user d-flex f-row f-nowrap f-space-between">
+                            <div class="d-flex f-row f-nowrap gap-1">
+                                <img src="./assests/img/user-1.jpg" alt="user-img" class="user-img">
+                                <div class="text">
+                                    <p class="subheading">User</p>
+                                    <h4 class="heading-four">Jason</h4>
+                                </div>
                             </div>
                             <button class="user-nav-button">
                                 <ion-icon name="chevron-down-circle-outline"></ion-icon>
                             </button>
                         </div>
                     </div>
-                </div>
-                <div class="team-members-container mt-1">
-                    <h3 class="heading-three">Team members</h3>
-                    <div class="members-img-box">
-                        <img src="./assests/img/user-1.jpg" alt="team members">
-                        <img src="./assests/img/user-2.jpg" alt="team members">
-                        <img src="./assests/img/user-3.jpg" alt="team members">
-                        <img src="./assests/img/user-4.jpg" alt="team members">
-                        <img src="./assests/img/user-5.jpg" alt="team members">
-                        <button class="add-member">
-                            <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <form action="#" class="search d-flex">
+                        <button class="search-btn">
+                            <ion-icon name="search-outline" class="header__search-btn__icon"></ion-icon>
                         </button>
-                    </div>
-                    <div class="work-progress-counter-container">
-                        <div class="project-progress-container">
-                            <p class="subheading">Project time</p>
-                            <h3 class="heading-three project-time-counter">18 hours</h3>
-                        </div>
-                        <div class="task-progress-container">
-                            <p class="subheading">Tasks in progress</p>
-                            <h3 class="heading-three task-counter">2</h3>
-                        </div>
-                        <div class="finished-tasks-container">
-                            <p class="subheading">Finished tasks</p>
-                            <h3 class="heading-three finished-counter">16</h3>
-                        </div>
-                    </div>
+                        <input type="text" class="search-bar" placeholder="Searching for...">
+                    </form>
                 </div>
-                
-                <div class="daily-tasks-container mt-2 mb-1">
-                    <div class="d-flex f-row f-nowrap f-space-between mb-1">
-                        <h3 class="heading-three">Daily tasks (3)</h3>
-                        <a href="javascript:void(0)" class="link">Edit</a>
+                <div class="overflow-auto main-area">
+                    <div class="page-work-container">
+                        <div class="work-container-heading d-flex f-space-between">
+                                <h3 class="heading-three">Recent Projects</h3>
+                                <button class="btn btn-user-project desktop-switch">Add project</button>
+                                <h5 class="mobile-switch"><a href="javascript:void(0)" class="link">View All</a></h5>
+                        </div>
+                        <div class="overflow-hover main-area">
+                            <div class="work-cards d-flex f-row f-wrap gap-3 g-center">
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                                <div class="work-card">
+                                    <div class="card-top">
+                                        <div class="card-img-box">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <img src="./assests/img/user-2.jpg" alt="">
+                                            <span class="card-img-box-number-outline">+2</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                        <div class="card-menu-btn">
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Make unique page for customer</h4>
+                                            <p class="work-subheading">Deadline : 30 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">108 hours / 75%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                                <div class="work-card">
+                                    <div class="card-top">
+                                        <div class="card-img-box">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <img src="./assests/img/user-2.jpg" alt="">
+                                            <span class="card-img-box-number-outline">+2</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                        <div class="card-menu-btn">
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Make unique page for customer</h4>
+                                            <p class="work-subheading">Deadline : 30 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">108 hours / 75%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                    
+                                <div class="work-card">
+                                    <div class="card-top">
+                                        <div class="card-img-box">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <img src="./assests/img/user-2.jpg" alt="">
+                                            <span class="card-img-box-number-outline">+2</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                        <div class="card-menu-btn">
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Make unique page for customer</h4>
+                                            <p class="work-subheading">Deadline : 30 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">108 hours / 75%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="work-card work-card-1">
+                                    <div class="card-top">
+                                        <div class="card-img-box">
+                                            <img src="./assests/img/user-2.jpg" alt="">                
+                                            <img src="./assests/img/user-1.jpg" alt="">
+                                            <span class="card-img-box-number-filled">+3</span>
+                                        </div>
+                                        <div class="card-menu-btn-container">
+                                            <div class="card-menu-btn"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-bottom">
+                                        <div class="work-top">
+                                            <h4 class="work-heading">Design system</h4>
+                                            <p class="work-subheading">Deadline : 18 October</p>
+                                        </div>
+                                        <div class="work-bottom">
+                                            <p class="work-time">84 hours / 40%</p>
+                                            <div class="work-done-bar">
+                                                <div class="work-done-bar-filled filled-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="daily-cards d-grid g-c-2">
-                        <div class="daily-card daily-card-1">
-                            <p class="text">Add new</p>
-                            <ion-icon name="add-outline"></ion-icon>
-                        </div>
-                        <div class="daily-card daily-card-2">
-                            <div class="marker">
-                                <div class="circle red"></div><span>New</span>
-                                <button class="checkbox">
-                                    <ion-icon name="chevron-down-outline"></ion-icon>
-                                </button>
+                    <div class="footer">
+                        <div class="page-reminder-container">
+                            <h3 class="heading-three">Reminders</h3>
+                            <div class="reminder-card">
+                                <div class="text">
+                                    <p class="subheading">Tomorrow, 16:00-18:00</p>
+                                    <h3 class="heading-three">Discussion of the interim results of the project</h3>
+                                </div>
+                                <button class="btn-reminder">Set reminder</button>
+                                <div class="selector">
+                                    <!-- Circles through css -->
+                                    <button></button>
+                                    <button></button>
+                                    <button></button>
+                                </div>
                             </div>
-                            <p class="text">Change color pallete to more bright</p>
-                            <div class="bg"></div>
                         </div>
-                        <div class="daily-card daily-card-3">
-                            <div class="marker">
-                                <div class="circle green"></div><span>In progress</span>
-                                <button class="checkbox">
-                                    <ion-icon name="chevron-down-outline"></ion-icon>
-                                </button>
+                        <div class="user-details d-grid g-c-2 desktop-switch">
+                            <div class="team-members-container mt-1">
+                                <h3 class="heading-three">Team members</h3>
+                                <div class="members-img-box">
+                                    <img src="./assests/img/user-1.jpg" alt="team members">
+                                    <img src="./assests/img/user-2.jpg" alt="team members">
+                                    <img src="./assests/img/user-3.jpg" alt="team members">
+                                    <img src="./assests/img/user-4.jpg" alt="team members">
+                                    <img src="./assests/img/user-5.jpg" alt="team members">
+                                    <button class="add-member">
+                                        <ion-icon name="add-outline"></ion-icon>
+                                    </button>
+                                </div>
                             </div>
-                            <p class="text">Make prototype for mobile version</p>
-                        </div>
-                        <div class="daily-card daily-card-4">
-                            <div class="marker">
-                                <div class="circle white"></div><span>Done</span>
-                                <button class="checkbox checked">
-                                    <ion-icon name="chevron-down-outline"></ion-icon>
-                                </button>
+                            <div class="work-counters-container">
+                                <h3 class="heading-three">Counter</h3>
+                                <div class="work-progress-counter-container">
+                                    <div class="project-progress-container">
+                                        <p class="subheading">Project time</p>
+                                        <h3 class="heading-three project-time-counter">18 hrs</h3>
+                                    </div>
+                                    <div class="task-progress-container">
+                                        <p class="subheading">Tasks in progress</p>
+                                        <h3 class="heading-three task-counter">2</h3>
+                                    </div>
+                                    <div class="finished-tasks-container">
+                                        <p class="subheading">Finished tasks</p>
+                                        <h3 class="heading-three finished-counter">16</h3>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="text">Make fixes in homepage</p>
                         </div>
+                        <div class="daily-tasks-container mt-2 mb-1 desktop-switch">
+                            <div class="d-flex f-row f-nowrap f-space-between mb-1">
+                                <h3 class="heading-three">Daily tasks (3)</h3>
+                                <a href="javascript:void(0)" class="link">Edit</a>
+                            </div>
+                            <div class="daily-cards d-grid g-c-2">
+                                <div class="daily-card daily-card-1">
+                                    <p class="text">Add new</p>
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </div>
+                                <div class="daily-card daily-card-2">
+                                    <div class="marker">
+                                        <div class="circle red"></div><span>New</span>
+                                        <button class="checkbox">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Change color pallete to more bright</p>
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="daily-card daily-card-3">
+                                    <div class="marker">
+                                        <div class="circle green"></div><span>In progress</span>
+                                        <button class="checkbox">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Make prototype for mobile version</p>
+                                </div>
+                                <div class="daily-card daily-card-4">
+                                    <div class="marker">
+                                        <div class="circle white"></div><span>Done</span>
+                                        <button class="checkbox checked">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Make fixes in homepage</p>
+                                </div>
+                            </div>
+                        </div>                   
                     </div>
                 </div>
             </div>
+            <div class="container__user-menu mobile-switch">
+                <div class="overflow-auto">
+                    <div class="d-flex f-row f-nowrap f-space-between g-center">
+                        <div class="mobile-user-button-close-container d-flex">
+                            <ion-icon name="close-outline" class="mobile-user-button-close"></ion-icon>
+                        </div>
+                        <button class="user-button-toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                        </div>
+                        <div class="user-menu-header d-flex f-row f-space-between gap-1 p-1">
+                            <button class="btn btn-user-project">Add project</button>
+                            <div class="user-nav d-flex f-row f-nowrap gap-1">
+                                <button class="btn btn-notification">
+                                    <ion-icon name="notifications-outline"></ion-icon>
+                                </button>
+                                <div class="user d-flex f-row f-nowrap">
+                                    <img src="./assests/img/user-1.jpg" alt="user-img" class="user-img">
+                                    <div class="text">
+                                        <p class="subheading">User</p>
+                                        <h4 class="heading-four">Jason</h4>
+                                    </div>
+                                    <button class="user-nav-button">
+                                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-members-container mt-1">
+                            <h3 class="heading-three">Team members</h3>
+                            <div class="members-img-box">
+                                <img src="./assests/img/user-1.jpg" alt="team members">
+                                <img src="./assests/img/user-2.jpg" alt="team members">
+                                <img src="./assests/img/user-3.jpg" alt="team members">
+                                <img src="./assests/img/user-4.jpg" alt="team members">
+                                <img src="./assests/img/user-5.jpg" alt="team members">
+                                <button class="add-member">
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </button>
+                            </div>
+                            <div class="work-progress-counter-container">
+                                <div class="project-progress-container">
+                                    <p class="subheading">Project time</p>
+                                    <h3 class="heading-three project-time-counter">18 hours</h3>
+                                </div>
+                                <div class="task-progress-container">
+                                    <p class="subheading">Tasks in progress</p>
+                                    <h3 class="heading-three task-counter">2</h3>
+                                </div>
+                                <div class="finished-tasks-container">
+                                    <p class="subheading">Finished tasks</p>
+                                    <h3 class="heading-three finished-counter">16</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="daily-tasks-container mt-2 mb-1">
+                            <div class="d-flex f-row f-nowrap f-space-between mb-1">
+                                <h3 class="heading-three">Daily tasks (3)</h3>
+                                <a href="javascript:void(0)" class="link">Edit</a>
+                            </div>
+                            <div class="daily-cards d-grid g-c-2">
+                                <div class="daily-card daily-card-1">
+                                    <p class="text">Add new</p>
+                                    <ion-icon name="add-outline"></ion-icon>
+                                </div>
+                                <div class="daily-card daily-card-2">
+                                    <div class="marker">
+                                        <div class="circle red"></div><span>New</span>
+                                        <button class="checkbox">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Change color pallete to more bright</p>
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="daily-card daily-card-3">
+                                    <div class="marker">
+                                        <div class="circle green"></div><span>In progress</span>
+                                        <button class="checkbox">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Make prototype for mobile version</p>
+                                </div>
+                                <div class="daily-card daily-card-4">
+                                    <div class="marker">
+                                        <div class="circle white"></div><span>Done</span>
+                                        <button class="checkbox checked">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                    <p class="text">Make fixes in homepage</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>  
         </div>
         <script defer src="./assests/js/script.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

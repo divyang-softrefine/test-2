@@ -41,7 +41,32 @@
 //                      horizontals             verticals
 .g-center { justify-items: center; align-items: center; justify-content: center; }
 .align-center { align-items: center;}
+.align-end { align-self: flex-end;}
+.align-start {align-self: flex-start;}
 .justify-center {justify-content: center; justify-items: center;}
-
+.justify-end {justify-self: flex-end;}
+.justify-start {justify-self: flex-start;}
+.align-start {justify-self : flex-start;}
 .f-space-between {justify-content: space-between;}
 
+
+
+.overflow-auto{
+    overflow-y: auto;
+    overflow-x : hidden;
+}
+
+.overflow-hover{
+    overflow-y : auto;
+    visibility: hidden;
+    &>*{
+        visibility: visible;
+    }
+    &:hover{
+        visibility: visible;
+    }
+}
+
+.o-hidden{
+    overflow: hidden;
+}

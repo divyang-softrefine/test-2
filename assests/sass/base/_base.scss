@@ -1,9 +1,36 @@
 html{
     font-size: 62.5%;
+
+    overflow-x: hidden; 
 }
 
+::-webkit-scrollbar{
+    width: 8px;
+    
+}
+/* Track */
+::-webkit-scrollbar-track {
+    //box-shadow: inset 0 0 5px rgb(209, 209, 209); 
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $color-bg-light;
+    border-radius: 10px;
+    height: auto;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 15px $color-bg-dark; 
+  }
+
+
 body{
-    background-color: $color-bg;
+    background-color: white;
     color: $color-text-light;
     font-weight: 300;
     line-height: 1.6;
@@ -16,6 +43,7 @@ body{
     outline : none;
     color : inherit;
     box-sizing: border-box;
+    text-overflow: ellipsis;
 }
 
 ul,ol {
@@ -24,29 +52,49 @@ ul,ol {
 
 
 .container__dashboard {
-    height : fit-content;
-    width : fit-content;
+    height : 100vh;
+    width : 100vw;
     background-color: white;
-    border-radius: $space-2;
-    box-shadow: 0 0 3rem rgba(0,0,0,0.1);
+    margin : 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .container__main{
-    padding : 2rem;
-    &>*:not(:last-child){
-        margin-bottom: 2rem;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap : 2rem;
+    overflow: hidden;
+    &>*:last-child{
+        align-self: flex-start;
+        height: 100%;
     }
-    max-width : 50rem;
+    &>*{
+        width: 100%;
+        padding: 2rem;
+    }
 }
 
 .container__user-menu{
-    display: flex;
-    flex-flow: column nowrap;
-    
-    padding : 1rem 2rem;
-    max-width : 32rem;
+    overflow: hidden;
+    width: 30%;
+    min-width: 30rem;
+    max-width: 50rem;
     box-shadow: 0 0 3rem rgba(0,0,0,0.05);
+    .work-progress-counter-container{
+        margin-top: 2rem;
+    }
+   
+    &>*{
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        display: flex;
+        flex-flow: column nowrap;
+        padding : 1rem 2rem;
+        height: 100%;
+    }
 }
 
 button{
@@ -55,3 +103,11 @@ button{
     cursor : pointer;
 }
 
+
+.desktop-switch{
+    display: none !important;
+}
+
+.mobile-switch{
+    display: inherit !important;
+}
