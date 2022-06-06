@@ -1,3 +1,4 @@
+
 # Changes done according to reported bugs :
 # Added hover scrolls on main container, made sure search container stays sticky/on top
 # Added hidden scrolls to menu and icon menu so that they can be scrolled when more data is added
@@ -8,3 +9,5 @@
 # increased bell size
 # fixed spacing issues
 # implemented checkbox only on menu button for mobile
+
+
